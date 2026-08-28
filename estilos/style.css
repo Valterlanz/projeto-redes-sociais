@@ -18,6 +18,10 @@ main {
     background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
 
 }
 
@@ -36,7 +40,35 @@ iframe#tela {
     top: 80px;
     left: 21.5px;
     width: 269px;
-    height: 480px;
-    
+    height: 470.5px;
+}
 
+section#redes-sociais img {
+    width: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+    box-sizing: border-box; 
+}
+
+section#redes-sociais img:hover {
+    border: 2.5px solid white;   
+}
+
+section#redes-sociais a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 10px;
+}
+
+section#redes-sociais a span {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+section#redes-sociais a:hover span {
+    opacity: 1;
 }
